@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <!-- Example: Include a CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>{{ title }}</h1>
+    </header>
+
+    <nav>
+        <!-- Example: Navigation links -->
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('python_exercises_examples') }}">Python exercises</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Example: Render dynamic content -->
+        <p>Welcome to my Flask application!</p>
+    </main>
+
+    <footer>
+        <p>&copy; {{ current_year }} My Flask App</p>
+    </footer>
+
+    <!-- Example: Include a JavaScript file -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
